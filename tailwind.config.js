@@ -11,6 +11,28 @@ module.exports = {
         "medium-gray": "hsl(0, 0%, 41%)",
         "almost-black": "hsl(0, 0%, 8%)",
       },
+      keyframes: {
+        slideLeft: {
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        slideRight: {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+      },
+      animation: {
+        slideLeft: "slideLeft 0.3s ease-in-out",
+        slideRight: "slideRight 0.3s ease-in-out",
+      },
     },
   },
   plugins: [],

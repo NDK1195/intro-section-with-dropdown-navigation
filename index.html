@@ -14,7 +14,109 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
-  <body>
+  <body class="min-h-dvh bg-almost-white">
+    <header class="mx-auto max-w-[1360px]">
+      <nav class="relative px-4 pt-4 lg:pt-5 xl:px-10">
+        <!-- menu mobile -->
+        <div class="flex items-center justify-between lg:hidden">
+          <!-- overlay -->
+          <div
+            class="fixed left-0 top-0 z-10 hidden min-h-dvh w-full bg-almost-black bg-opacity-75"
+            id="overlay"
+          ></div>
+          <!-- overlay -->
+          <!-- logo -->
+          <img src="./images/logo.svg" alt="logo" />
+          <!-- logo -->
+
+          <!-- icon menu -->
+          <div class="z-30">
+            <img
+              src="./images/icon-menu.svg"
+              alt="icon menu"
+              id="icon-menu"
+              class="cursor-pointer"
+            />
+            <img
+              src="./images/icon-close-menu.svg"
+              alt="icon close menu"
+              id="icon-close-menu"
+              class="hidden cursor-pointer"
+            />
+          </div>
+          <!-- icon menu -->
+
+          <!-- menu -->
+          <ul
+            class="absolute right-0 top-0 z-20 min-h-dvh w-0 bg-almost-white transition-[width] duration-300"
+            id="menu-mobile"
+          ></ul>
+          <!-- menu -->
+        </div>
+        <!-- menu mobile -->
+      </nav>
+    </header>
+    <main
+      class="mx-auto max-w-[1440px] pb-[94px] pt-6 lg:px-10 lg:pb-[122px] lg:pt-[67px] xl:pl-[165px] xl:pr-[130px]"
+    >
+      <div
+        class="flex w-full flex-col items-center gap-12 lg:flex-row-reverse xl:gap-[125px]"
+      >
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./images/image-hero-desktop.png"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt="image hero"
+            class="lg:max-w-[480px]"
+          />
+        </picture>
+
+        <div class="px-4 text-center lg:px-0 lg:text-left">
+          <h1
+            class="mb-4 max-w-[520px] text-4xl font-bold leading-[42px] tracking-[-0.5px] text-almost-black lg:mb-12 lg:text-[80px] lg:leading-[80px] lg:tracking-[-1.111px]"
+          >
+            Make remote work
+          </h1>
+          <p
+            class="mb-6 max-w-[445px] leading-[26px] text-medium-gray lg:mb-[51px] lg:text-lg lg:leading-7"
+          >
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button
+            class="mx-auto mb-12 flex h-12 w-[136px] items-center justify-center rounded-[15px] border border-almost-black bg-almost-black font-bold leading-[26px] tracking-[-0.222px] text-almost-white transition-colors hover:bg-almost-white hover:text-almost-black lg:mx-0 lg:mb-[108px] lg:h-14 lg:w-[163px]"
+          >
+            Learn more
+          </button>
+
+          <div class="flex max-w-[478px] items-center justify-between">
+            <img
+              src="./images/client-databiz.svg"
+              alt="client databiz"
+              class="w-[81.251px] lg:w-[113.144px]"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt="client audiophile"
+              class="w-[52.867px] lg:w-[73px]"
+            />
+            <img
+              src="./images/client-meet.svg"
+              alt="client meet"
+              class="w-[64.138px] lg:w-[89.313px]"
+            />
+            <img
+              src="./images/client-maker.svg"
+              alt="client maker"
+              class="w-[58.896px] lg:w-[82.014px]"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="./src/index.js"></script>
   </body>
 </html>
