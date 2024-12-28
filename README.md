@@ -8,8 +8,8 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Live site URL here](https://ndk1195.github.io/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/intro-section-with-dropdown-navigation)
+- Live Site URL: [Live site URL here](https://ndk1195.github.io/intro-section-with-dropdown-navigation/)
 
 ### Built with
 
