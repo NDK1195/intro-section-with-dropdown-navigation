@@ -16,7 +16,7 @@
   </head>
   <body class="min-h-dvh bg-almost-white">
     <header class="mx-auto max-w-[1360px]">
-      <nav class="relative px-4 pt-4 lg:pt-5 xl:px-10">
+      <nav class="px-4 pt-4 lg:pt-5 xl:px-10">
         <!-- menu mobile -->
         <div class="flex items-center justify-between lg:hidden">
           <!-- overlay -->
@@ -48,12 +48,266 @@
 
           <!-- menu -->
           <ul
-            class="absolute right-0 top-0 z-20 min-h-dvh w-0 bg-almost-white transition-[width] duration-300"
+            class="fixed right-0 top-0 z-20 min-h-dvh w-0 bg-almost-white pt-20 leading-[26px] text-medium-gray transition-[width] duration-300"
             id="menu-mobile"
-          ></ul>
+          >
+            <li
+              class="mb-4 flex cursor-pointer flex-col pl-6"
+              id="menu-features-mobile"
+            >
+              <div
+                class="group flex items-center gap-4 transition-colors hover:text-almost-black"
+              >
+                <span>Features</span>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="stroke-current text-[#686868] group-hover:stroke-almost-black"
+                  id="icon-features-close-mobile"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hidden stroke-current text-[#686868] group-hover:stroke-almost-black"
+                  id="icon-features-open-mobile"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+                </svg>
+              </div>
+              <ul
+                class="animate-dropdown hidden flex-col gap-4 p-6"
+                id="menu-features-content-mobile"
+              >
+                <li
+                  class="flex items-center gap-4 transition-colors hover:text-almost-black"
+                >
+                  <img src="./images/icon-calendar.svg" alt="icon calendar" />
+                  <span>Calender</span>
+                </li>
+                <li
+                  class="flex items-center gap-4 transition-colors hover:text-almost-black"
+                >
+                  <img src="./images/icon-reminders.svg" alt="icon reminders" />
+                  <span>Reminders</span>
+                </li>
+                <li
+                  class="flex items-center gap-4 transition-colors hover:text-almost-black"
+                >
+                  <img src="./images/icon-planning.svg" alt="icon planning" />
+                  <span>Planning</span>
+                </li>
+                <li
+                  class="flex items-center gap-4 transition-colors hover:text-almost-black"
+                >
+                  <img src="./images/icon-todo.svg" alt="icon todo" />
+                  <span>Todo List</span>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="mb-4 flex cursor-pointer flex-col pl-6"
+              id="menu-company-mobile"
+            >
+              <div
+                class="group flex items-center gap-4 transition-colors hover:text-almost-black"
+              >
+                <span>Company</span>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="stroke-current text-[#686868] group-hover:stroke-almost-black"
+                  id="icon-company-close-mobile"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                </svg>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hidden stroke-current text-[#686868] group-hover:stroke-almost-black"
+                  id="icon-company-open-mobile"
+                >
+                  <path stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+                </svg>
+              </div>
+              <ul
+                class="animate-dropdown hidden flex-col gap-4 p-6"
+                id="menu-company-content-mobile"
+              >
+                <li class="transition-colors hover:text-almost-black">
+                  History
+                </li>
+                <li class="transition-colors hover:text-almost-black">
+                  Our Team
+                </li>
+                <li class="transition-colors hover:text-almost-black">Blog</li>
+              </ul>
+            </li>
+            <li
+              class="mb-4 cursor-pointer pl-6 transition-colors hover:text-almost-black"
+            >
+              <span>Careers</span>
+            </li>
+            <li
+              class="mb-8 cursor-pointer pl-6 transition-colors hover:text-almost-black"
+            >
+              <span>About</span>
+            </li>
+            <ul class="px-6 text-center text-sm leading-4">
+              <li class="mb-4 transition-colors hover:text-almost-black">
+                <a href="#">Login</a>
+              </li>
+              <li
+                class="cursor-pointer rounded-[14px] border-[1.5px] border-medium-gray py-3 transition-colors hover:border-almost-black hover:text-almost-black"
+              >
+                <a href="#" class="">Register</a>
+              </li>
+            </ul>
+          </ul>
           <!-- menu -->
         </div>
         <!-- menu mobile -->
+
+        <!-- menu desktop -->
+        <div class="hidden items-center justify-between lg:flex">
+          <div class="flex items-center gap-[60px]">
+            <img src="./images/logo.svg" alt="logo" />
+            <ul
+              class="flex items-center gap-10 text-sm leading-4 text-medium-gray"
+            >
+              <li class="relative cursor-pointer" id="menu-features-desktop">
+                <div
+                  class="group flex items-center gap-2 transition-colors hover:text-almost-black"
+                >
+                  <span>Features</span>
+                  <svg
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-current text-[#686868] group-hover:stroke-almost-black"
+                    id="icon-features-close-desktop"
+                  >
+                    <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                  </svg>
+                  <svg
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hidden stroke-current text-[#686868] group-hover:stroke-almost-black"
+                    id="icon-features-open-desktop"
+                  >
+                    <path stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+                  </svg>
+                </div>
+                <ul
+                  class="animate-dropdown absolute right-0 top-9 hidden h-40 w-[153px] flex-col items-start justify-center gap-4 rounded-[10px] bg-white pl-[25px] shadow-box"
+                  id="menu-features-content-desktop"
+                >
+                  <li
+                    class="flex cursor-pointer items-center gap-4 transition-colors hover:text-almost-black"
+                  >
+                    <img src="./images/icon-todo.svg" alt="icon todo" />
+                    <span>Todo List</span>
+                  </li>
+                  <li
+                    class="flex cursor-pointer items-center gap-4 transition-colors hover:text-almost-black"
+                  >
+                    <img src="./images/icon-calendar.svg" alt="icon calendar" />
+                    <span>Calender</span>
+                  </li>
+                  <li
+                    class="flex cursor-pointer items-center gap-4 transition-colors hover:text-almost-black"
+                  >
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="icon reminders"
+                    />
+                    <span>Reminders</span>
+                  </li>
+                  <li
+                    class="flex cursor-pointer items-center gap-4 transition-colors hover:text-almost-black"
+                  >
+                    <img src="./images/icon-planning.svg" alt="icon planning" />
+                    <span>Planning</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="relative cursor-pointer" id="menu-company-desktop">
+                <div
+                  class="group flex items-center gap-2 transition-colors hover:text-almost-black"
+                >
+                  <span>Company</span>
+                  <svg
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-current text-[#686868] group-hover:stroke-almost-black"
+                    id="icon-company-close-desktop"
+                  >
+                    <path stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+                  </svg>
+                  <svg
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="hidden stroke-current text-[#686868] group-hover:stroke-almost-black"
+                    id="icon-company-open-desktop"
+                  >
+                    <path stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+                  </svg>
+                </div>
+                <ul
+                  class="animate-dropdown absolute left-0 top-9 hidden h-32 w-[116px] flex-col items-start justify-center gap-4 rounded-[10px] bg-white pl-[25px] shadow-box"
+                  id="menu-company-content-desktop"
+                >
+                  <li
+                    class="cursor-pointer transition-colors hover:text-almost-black"
+                  >
+                    History
+                  </li>
+                  <li
+                    class="cursor-pointer transition-colors hover:text-almost-black"
+                  >
+                    Our Team
+                  </li>
+                  <li
+                    class="cursor-pointer transition-colors hover:text-almost-black"
+                  >
+                    Blog
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="cursor-pointer transition-colors hover:text-almost-black"
+              >
+                Careers
+              </li>
+              <li
+                class="cursor-pointer transition-colors hover:text-almost-black"
+              >
+                About
+              </li>
+            </ul>
+          </div>
+          <ul
+            class="flex items-center gap-10 text-sm leading-4 text-medium-gray"
+          >
+            <li class="transition-colors hover:text-almost-black">
+              <a href="#">Login</a>
+            </li>
+            <li
+              class="cursor-pointer rounded-[14px] border-[1.5px] border-medium-gray px-[22px] py-3 transition-colors hover:border-almost-black hover:text-almost-black"
+            >
+              <a href="#" class="">Register</a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu desktop -->
       </nav>
     </header>
     <main

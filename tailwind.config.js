@@ -12,26 +12,19 @@ module.exports = {
         "almost-black": "hsl(0, 0%, 8%)",
       },
       keyframes: {
-        slideLeft: {
+        dropdown: {
           "0%": {
-            transform: "translateX(100%)",
+            transform: "translateY(-20%)",
+            opacity: 0,
           },
           "100%": {
-            transform: "translateX(0)",
-          },
-        },
-        slideRight: {
-          "0%": {
-            transform: "translateX(0)",
-          },
-          "100%": {
-            transform: "translateX(100%)",
+            transform: "translateY(0)",
+            opacity: 1,
           },
         },
       },
       animation: {
-        slideLeft: "slideLeft 0.3s ease-in-out",
-        slideRight: "slideRight 0.3s ease-in-out",
+        dropdown: "dropdown 0.2s ease-in-out",
       },
     },
   },
